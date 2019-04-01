@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+.divOpacity{
+    position: relative;
+    opacity: 0.7;
+    width: 113px;
+    height: 1010px;
+    left: 220px;
+    bottom: 1067px;
+    background: black;
+    z-index: 1;
+  }
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.menuMobi{
+    display: none;
+}
+.logo{
+    width: 9%;
+    padding-left: 21px;
+    top: -3px;
+}
+.busca{
+    position: relative;
+    width: 450px;
+    bottom: 6px;
+}
+.busca img{
+    position: absolute;
+    right: 0%;
+    top: 5px;
+}
+.busca input{
+    width: 100%;
+    border: 0px;
+    border-bottom: 1px solid #7A7A7A;
+    line-height: 26px;
+    
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+
+    color: #7A7A7A;
+}
+.minhaConta{
+    display: flex;
+    width: 309px;
+    justify-content: space-between;
+    align-items: center;
+}
+.minhaConta span{
+    right: 571px;
+    top: 29px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: normal;
+    color: #7A7A7A;
+}
+.account img{
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.miniCart{
+    border-right: 1px solid #7A7A7A;
+    padding-right: 20px;
+    padding-left: 0px;
+}
+
+@media (max-width:600px){
+    .container {
+        padding: 0 20px;
+    }
+    .header{
+        position: relative;
+    }
+    .menuMobi{
+        display: block;
+        width: 25%;
+    }
+    .logo{
+        width: 50%;
+    }
+    .account{
+        display: none;
+    }
+    .idiomas{
+        display: none;
+    }
+
+
+    .miniCart{
+        border: 0;
+        padding: 0;
+    }
+    .busca{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+    .minhaConta{
+        width: unset;
+    }
+}
